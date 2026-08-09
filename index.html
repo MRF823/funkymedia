@@ -13,8 +13,7 @@
   .halo-bl { position: fixed; bottom: -100px; left: -100px; width: 350px; height: 350px; border-radius: 50%; background: rgba(0,180,216,0.06); pointer-events: none; }
   .halo-center { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%); width: 600px; height: 600px; border-radius: 50%; background: radial-gradient(ellipse, rgba(0,180,216,0.04) 0%, transparent 70%); pointer-events: none; }
   .container { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 2.5rem; padding: 3rem 2rem; position: relative; z-index: 1; text-align: center; flex: 1; }
-  .logo-wrap { display: flex; flex-direction: column; align-items: center; gap: 4px; }
-  .logo-top-row { display: flex; align-items: center; gap: 16px; }
+  .logo-wrap { display: flex; align-items: center; gap: 20px; }
   .logo-text { display: flex; flex-direction: column; gap: 4px; text-align: center; }
   .logo-funky { font-family: 'Bebas Neue', sans-serif; font-size: 72px; line-height: 1; letter-spacing: 0.05em; color: #fff; }
   .logo-funky span { color: var(--yellow); }
@@ -56,17 +55,15 @@
 <div class="container">
 
   <div class="logo-wrap">
-    <div class="logo-top-row">
-      <svg width="82" height="72" viewBox="0 0 58 52" fill="none" style="margin-top:-12px">
-        <path d="M2 2 H56 V36 L42 50 H2 Z" fill="rgba(0,80,110,0.28)" stroke="#FFE044" stroke-width="1"/>
-        <rect x="8" y="32" width="7" height="12" fill="#FFE044" opacity="0.4"/>
-        <rect x="18" y="24" width="7" height="20" fill="#FFE044" opacity="0.65"/>
-        <rect x="28" y="14" width="7" height="30" fill="#FFE044"/>
-        <polygon points="31,8 37,16 25,16" fill="#fff"/>
-      </svg>
-      <div class="logo-funky">FUNKY</div>
-    </div>
+    <svg width="82" height="72" viewBox="0 0 58 52" fill="none">
+      <path d="M2 2 H56 V36 L42 50 H2 Z" fill="rgba(0,80,110,0.28)" stroke="#FFE044" stroke-width="1"/>
+      <rect x="8" y="32" width="7" height="12" fill="#FFE044" opacity="0.4"/>
+      <rect x="18" y="24" width="7" height="20" fill="#FFE044" opacity="0.65"/>
+      <rect x="28" y="14" width="7" height="30" fill="#FFE044"/>
+      <polygon points="31,8 37,16 25,16" fill="#fff"/>
+    </svg>
     <div class="logo-text">
+      <div class="logo-funky">FUNKY</div>
       <div class="logo-media-row">
         <div class="logo-line"></div>
         <div class="logo-media">Media</div>
