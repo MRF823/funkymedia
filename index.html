@@ -36,6 +36,9 @@
   .form-wrap button { background: var(--turq); color: var(--dark); font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; padding: 0.75rem 1.4rem; border: none; cursor: pointer; white-space: nowrap; }
   .form-wrap button:hover { opacity: 0.88; }
   .form-note { font-size: 0.7rem; color: var(--muted); margin-top: -1rem; }
+  .gdpr-wrap { display: flex; align-items: flex-start; gap: 10px; max-width: 420px; }
+  .gdpr-wrap input[type="checkbox"] { margin-top: 3px; accent-color: var(--turq); width: 14px; height: 14px; flex-shrink: 0; cursor: pointer; }
+  .gdpr-wrap label { font-size: 0.7rem; color: var(--muted); line-height: 1.5; cursor: pointer; }
   .success-msg { display: none; align-items: center; gap: 10px; border: 1px solid rgba(0,180,216,0.25); padding: 0.75rem 1.5rem; color: var(--turq); font-size: 0.85rem; font-weight: 500; }
   .success-msg.show { display: flex; }
   .socials { display: flex; gap: 1.5rem; }
@@ -82,6 +85,10 @@
     <div class="form-wrap">
       <input type="email" name="email" placeholder="adresa@email.ro" required/>
       <button type="submit">Anunță-mă</button>
+    </div>
+    <div class="gdpr-wrap">
+      <input type="checkbox" id="gdpr" name="gdpr" required/>
+      <label for="gdpr">Sunt de acord ca Funky Media să îmi stocheze adresa de email în scopul notificării la lansarea site-ului. Nu vei primi spam.</label>
     </div>
   </form>
 
